@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New York Times Top Stories</title>
+<link href="/css/style.css" rel="stylesheet">
+  
+</head>
+<body class="bg-base-200 flex flex-col min-h-screen" data-theme="dark">
+  <div class="navbar bg-base-100"> <!-- Nav Bar -->
+  <div class="flex-none">
+    <button class="btn btn-square btn-ghost">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl" href="/">NoahWebsite:)</a>
+  </div>
+  <div class="flex-none justify even">
+    <button class="btn btn-rectangle btn-ghost mx-3">
+      <a href="/api" >Disney Characters</a>
+    </button>
+    <button class="btn btn-square btn-ghost">
+      <a href="/blog/blogs">Blogs</a>
+    </button>
+    <button class="btn btn-square btn-ghost">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+    </button>
+  </div>
+</div>
+  
+  
+    
+<div class="flex flex-col text-center">
+  <h1 class="text-primary text-4xl my-5">Random Disney Characters</h1>
+
+  <h3 id="charName" class="text-secondary text-3xl pt-10 pb-5"></h3>
+  <img id="charImg" src="" class="h-64 object-contain">
+  <p>Appears in:</p>
+  <p id="filmsAndTv"></p>
+  
+  <button class="btn btn-rectangle border-spacing-0 border-neutral-400 w-48 self-center mt-10" onclick="myFunction()">Get a random character
+    <script>
+    function myFunction() {
+      let i = 0;
+      document.getElementById("charName").innerHTML = "";
+      document.getElementById("charImg").src = "";
+      document.getElementById("filmsAndTv").innerHTML = " + ";
+    }
+    </script>
+  </button>
+</div>
+
+  
+</body>
+</html>
