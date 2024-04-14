@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "npx eleventy --serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind": "npx tailwindcss -i ./src/cssinput/input.css -o ./src/css/style.css --watch"
   },
   "keywords": [],
   "author": "",

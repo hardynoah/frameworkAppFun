@@ -10,5 +10,13 @@
   {% block content %}
     {{ content | safe }}
   {% endblock %}
+
+  <ul id="HamburgerMenu" class="menu bg-neutral-content text-accent-content w-56 rounded-box">
+    <ul>
+      {% for post in collections.posts %}
+        <li><a href="{{post.url}}" class="text-xl pl-4 hover:text-secondary">{{post.data.title}}</a></li>
+      {% endfor %}
+    </ul>
+  </ul>
 </body>
 </html>
